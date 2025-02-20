@@ -20,6 +20,7 @@ nav{
     position:fixed;
     width:100%;
     backdrop-filter: blur(20px);
+    flex-direction: row;
 }
 .name{
     width:60%;
@@ -96,7 +97,14 @@ footer{
     padding-top: 3%;
     padding-bottom: 2%;
     gap:5%;
+    margin:auto;
 }
+
+
+.footcon{
+    width:10%;
+}
+
 .bi{
     font-size:30px;
 }
@@ -105,12 +113,59 @@ footer{
 }
 
 
+.mfooter{
+    display:none;
+}
 
 
 /* mobile view */
 
-@media (min-resolution: 720px) {
+@media screen and (max-width:720px) {
+   nav{
+    display: flex;
+    flex-direction: column;
+   }
+   .name{
+    width:100%;
+    text-align: center;
+    margin:0%;
+   }
+   .menu{
+    display:none;
+   }
+   .footer{
+    display:none;
+   }
+   .mfooter{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap:8%;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+    padding: 2%;
+   }
+   .bi{
+    font-size: 30px;
+   }
+   .home{
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+   }
+ 
+    .g{
+        margin-bottom: 20px;
+
+    }
    
+
+    
 }
 
 /* mobile view end*/

@@ -68,3 +68,40 @@ function generateQRCode() {
 
   // Generate QR code when the page loads
   window.onload = generateQRCode;
+
+
+
+
+document.querySelectorAll('.nava').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        // Delay before the scroll (in milliseconds)
+        const delay = 600;
+
+        setTimeout(() => {
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }, delay);
+    });
+});
+
+
+window.addEventListener('DOMContentLoaded', function() {
+    var sections = document.querySelectorAll('.sec');
+    
+    // Scroll to the section with an offset of 10vh
+    sections.forEach(function(section) {
+        section.style.scrollMarginTop = '8vh';
+    });
+});
+
+const scrollProgress = document.getElementById("scrollbar-progress");
+const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+window.addEventListener("scroll", () => {
+  const scrollTop =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+});

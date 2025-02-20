@@ -158,7 +158,13 @@ footer{
     position: relative;
 
    }
- 
+   .cards{
+    margin-top: 20px;
+    display:flex;
+    flex-direction:row;
+    gap:50%;
+    width:100%;
+}
     .g{
         margin-bottom: 20px;
 

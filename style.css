@@ -50,7 +50,9 @@ a{
 .cards{
     margin-top: 20px;
     
-    
+    margin:auto;
+    align-items: center;
+    text-align: center;
     width:100%;
 }
 .boarder{
@@ -76,6 +78,8 @@ a{
     justify-content: center;
     padding-top:60% ;
     padding-bottom:60% ;
+    margin: auto;
+    
 }
 
 .qr{
@@ -126,6 +130,15 @@ footer{
 }
 .imgholder{
     display:none;
+}
+.link{
+    display:flex;
+    flex-direction: column;
+    padding: 2%;
+
+    justify-content: center;
+    text-align: center;
+    margin: 0%;
 }
 
 /* mobile view */

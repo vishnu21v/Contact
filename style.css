@@ -1,0 +1,116 @@
+body{
+    height:100vh;
+    background-color: black;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+/* common  section*/
+.sec{
+    margin:0%;
+    top:0;
+    margin-top: 0%;
+}
+/* common over */
+/* navbar */
+nav{
+    padding-top: 1%;
+    padding-bottom:1%;
+    display:flex;
+    position:fixed;
+    width:100%;
+    backdrop-filter: blur(20px);
+}
+.name{
+    width:60%;
+    margin-left: 2%;
+    text-decoration: none;
+}
+.menu{
+    display:flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: end;
+    left:0;
+    width:100%;
+    margin-right: 2%;
+
+}
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+/* cards sec */
+.cards{
+    margin-top: 20px;
+    
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+.boarder{
+   padding:4%;
+   width:100%;
+}
+
+/* card */
+.container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:10%
+}
+.card{
+    display:flex;
+    flex-direction:column;
+    color:white;
+    text-align: center;
+    justify-content: center;
+}
+
+.qr{
+
+  
+    text-align: center;
+    justify-content: center;
+
+}
+.code{
+    width:100px;
+    height:100px;
+}
+.user{
+    text-align: center;
+    width:100%;
+}
+footer{
+    width:100%;
+}
+.footer{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    gap:5%;
+}
+.bi{
+    font-size:30px;
+}
+.map{
+    font-size:30px;
+}
+
+
+
+
+/* mobile view */
+
+@media (min-resolution: 720px) {
+   
+}
+
+/* mobile view end*/

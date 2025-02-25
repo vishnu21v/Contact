@@ -51,19 +51,19 @@ function generateQRCode() {
         facebookqrcodeImage.src = url;
       }
     });
-    // const data = "https://www.instagram.com/_._vishnu.v_._?igsh=MXRlaHJ3cjBlMzJybg==";  // Replace with your URL or any text
-    // const qrcodeImage = document.getElementById("instaqrcode");
+    const data = "https://wa.me/qr/AZHEBBNH6JBSG1";  // Replace with your URL or any text
+    const qrcodeImage = document.getElementById("auswhatsqrcode");
     
 
-    // // Generate the QR code as a data URL and set it as the source of the image tag
-    // QRCode.toDataURL(data, function (error, url) {
-    //   if (error) {
-    //     console.error(error);
-    //   } else {
-    //     // Set the generated QR code URL as the image source
-    //     qrcodeImage.src = url;
-    //   }
-    // });
+    // Generate the QR code as a data URL and set it as the source of the image tag
+    QRCode.toDataURL(data, function (error, url) {
+      if (error) {
+        console.error(error);
+      } else {
+        // Set the generated QR code URL as the image source
+        qrcodeImage.src = url;
+      }
+    });
   }
 
   // Generate QR code when the page loads

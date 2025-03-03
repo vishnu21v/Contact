@@ -167,7 +167,7 @@ footer{
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    gap:8%;
+    gap:4%;
     position: fixed;
     width: 100%;
     bottom: 0;

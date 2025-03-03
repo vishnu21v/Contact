@@ -38,6 +38,23 @@ function generateQRCode() {
         whatsappqrcodeImage.src = url;
       }
     });
+
+    const snapchatdata = "https://www.snapchat.com/add/v_252904v?share_id=XIB2pO4LZiM&locale=en-IN";  // Replace with your URL or any text
+    const snapchatqrcodeImage = document.getElementById("snapchatqrcode");
+    
+    // // Generate the QR code as a data URL and set it as the source of the image tag
+    QRCode.toDataURL(snapchatdata, function (error, url) {
+      if (error) {
+        console.error(error);
+      } else {
+        // Set the generated QR code URL as the image source
+        snapchatqrcodeImage.src = url;
+      }
+    });
+
+
+
+
     const facebookdata = "https://www.facebook.com/share/14zVnb83yp/";  // Replace with your URL or any text
     const facebookqrcodeImage = document.getElementById("facebookqrcode");
     

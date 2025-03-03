@@ -167,13 +167,13 @@ footer{
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    gap:4%;
+    gap:1%;
     position: fixed;
     width: 100%;
     bottom: 0;
     z-index: 1;
     backdrop-filter: blur(20px);
-    padding: 2%;
+    padding: 1%;
    }
    .bi{
     font-size: 30px;

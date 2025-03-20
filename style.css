@@ -80,7 +80,8 @@ a{
     justify-content: center;
     margin: auto;
     gap:10%;
-    padding:300px;
+    padding-top:300px;
+    padding-bottom:300px;
 }
 
 .qr{

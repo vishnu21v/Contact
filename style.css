@@ -175,9 +175,7 @@ footer{
         backdrop-filter: blur(20px);
         padding: 1%;
    }
-   .boarder{
-    width:100%;
-   }
+  
    .bi{
     font-size: 15px;
    }

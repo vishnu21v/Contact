@@ -51,6 +51,20 @@ function generateQRCode() {
         snapchatqrcodeImage.src = url;
       }
     });
+     
+    // github
+    const githubdata = "https://github.com/vishnu21v";  // Replace with your URL or any text
+    const githubqrcodeImage = document.getElementById("githubqrcode");
+    
+    // // Generate the QR code as a data URL and set it as the source of the image tag
+    QRCode.toDataURL(githubdata, function (error, url) {
+      if (error) {
+        console.error(error);
+      } else {
+        // Set the generated QR code URL as the image source
+        githubqrcodeImage.src = url;
+      }
+    });
 
 
 

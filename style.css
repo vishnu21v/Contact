@@ -24,7 +24,6 @@ nav{
     margin: 0%;
 }
 .name{
-    width:60%;
     margin-left: 2%;
     text-decoration: none;
     text-align: center;
@@ -34,7 +33,7 @@ nav{
 .menu{
     display:flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 2%;
     justify-content: end;
     left:0;
     width:100%;
@@ -49,17 +48,18 @@ a{
 /* cards sec */
 .cards{
     margin-top: 20px;
-    
     margin:auto;
     align-items: center;
     text-align: center;
     width:100%;
+    
 }
 .boarder{
    padding:4%;
-   width:100%;
+ 
    display:flex;
-   flex-direction:row;
+   flex-direction:column;
+   gap:10%;
    
 }
 
@@ -69,6 +69,8 @@ a{
     display:flex;
     flex-direction:column;
     
+
+    
 }
 .card{
     display:flex;
@@ -76,15 +78,12 @@ a{
     color:white;
     text-align: center;
     justify-content: center;
-    padding-top:60% ;
-    padding-bottom:60% ;
     margin: auto;
-    
+    gap:10%;
+    padding:300px;
 }
 
 .qr{
-
-  
     text-align: center;
     justify-content: center;
 
@@ -148,6 +147,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding-top: 0%;
+    width:100%;
    }
    .name{
     width:100%;
@@ -163,33 +163,43 @@ footer{
     display:none;
    }
    .mfooter{
-    display:flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    gap:4%;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 1;
-    backdrop-filter: blur(20px);
-    padding: 1%;
+        display:flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        gap:3%;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 1;
+        backdrop-filter: blur(20px);
+        padding: 1%;
+   }
+   .boarder{
+    width:100%;
    }
    .bi{
-    font-size: 25px;
+    font-size: 15px;
    }
    .home{
-    display: flex;
-    justify-content: center;
-    position: relative;
+        display: flex;
+        justify-content: center;
+        position: relative;
 
    }
+   .container{
+        margin-top: 10px;
+        display:flex;
+        flex-direction:column;
+        width:100%;
+   }
    .cards{
-    margin-top: 20px;
-    display:flex;
-    flex-direction:row;
-    gap:50%;
-    width:100%;
+        margin-top:120px;
+        margin-bottom:120px;
+        display:flex;
+        flex-direction:row;
+        gap:100px;
+        width:100%;
     }
     .g{
         margin-bottom: 20px;
